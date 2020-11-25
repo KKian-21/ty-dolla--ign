@@ -1,0 +1,212 @@
+html,
+body{
+    background-image: url("bg_ty$_mobile.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: transparent;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+body::-webkit-scrollbar {
+    width: 0.4rem;
+  }
+  body::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  body::-webkit-scrollbar-thumb {
+    background: #733c91;
+  }
+
+.person{
+    margin-top: 7%;
+}
+
+.person-img{
+  position: relative;
+  height: 90vw;
+  left: -11vw;
+  background-size: 115vh;
+  background-repeat: 70% no-repeat; 
+  z-index: 2;
+  }
+
+.heading{
+    height: 22vw;
+}
+.mainButton{
+    background-color: transparent;
+    color: white;
+    border: 0;
+    text-transform: uppercase;
+    position: relative;
+}
+.mainButton:hover{
+    color: #821bb4;
+}
+.mainContainerButton{
+    padding-top: 4%;
+
+}
+.mainContent{
+    position: relative;
+    text-align: center;
+    font-weight: 800;
+    text-decoration: underline;
+}
+.video-section{
+    text-align: center;
+    margin-top: 17%;
+}
+.videoContainer{
+    position: relative;
+    height: 0;
+    padding-bottom: 119.25%;
+    left: -40%;
+} 
+.videoFrame{
+    position: absolute;
+    width: 80%;
+    height: 40%;
+}
+.topic{
+    margin-bottom: 3%;
+}
+.music-section{
+    text-align: center;
+    margin-top: -50%;
+}
+.musicButtonContainer{
+    margin-top: 7%;
+}
+.musicButton{
+    text-decoration: underline;
+}
+.shop-section{
+    margin-top: 22%;
+}
+/* .albumContent {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+} */
+.cover-section{
+    margin-top: 22%;
+}
+
+
+@media only screen and (min-width: 500px) {
+
+    .mainButton{
+        padding-top: 8%;
+        font-size: larger;
+    }
+    .person{
+        margin-top: 1%;
+    }
+    .mainContent{
+        margin-top: -30%;
+        z-index: 5;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+
+    .mainButton{
+        padding-top: 8%;
+        font-size: x-large;
+    }
+}
+
+@media only screen and (min-width: 1023px) {
+
+    .person-img{
+        height: 55vw;
+    }
+    .mainContent{
+        margin-top: -43%;
+        margin-left: 20%;
+    }
+    .heading{
+        height: 20vw;
+    }
+    .music-section{
+        margin-top: -56%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .videoContainer{
+        left:-35%;
+    }
+    .videoFrame{
+        width: 70%;
+        height: 28%;
+    }
+    .music-section{
+        margin-top: -74%;
+    }
+}
+
+@media only screen and (min-width: 1950px) {
+
+    .person-img{
+        height: 38vw;
+    }
+    .mainContent{
+        margin-left: 36%;
+    }
+    .heading{
+        height: 16vw;
+    }
+    .videoContainer{
+        left:-29%;
+    }
+    .videoFrame{
+        width: 60%;
+        height: 25%;
+    }
+    .music-section{
+        margin-top: -80%;
+    }
+    .shop-section{
+        margin-top: 12%;
+    }
+    .cover-section{
+        margin-top: 12%;
+    }
+
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-4em);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes showing {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+.mainContent{
+    animation: fadeIn 2s forwards;
+}
+
+.person-img{
+    animation: showing 3.5s;
+}
